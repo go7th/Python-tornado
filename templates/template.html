@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+<title>标题</title>
+<meta name="keywords" content="关键词" />
+<meta name="description" content="描述" />
+<link href="{{ static_url("web/css/css.css") }}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{{ static_url("web/js/jquery2.1.1.min.js") }}"></script>
+<script type="text/javascript" src="{{ static_url("web/js/jquery.SuperSlide.2.1.1.js") }}"></script>
+<!--[if (gte IE 6)&(lte IE 10)]>
+  <script type="text/javascript" src="{{ static_url("web/js/jquery1.42.min.js") }}"></script>
+    <script type="text/javascript" src="{{ static_url("web/js/html5.js") }}"></script>
+    <script type="text/javascript" src="{{ static_url("web/js/selectivizr.js") }}"></script>
+    <script type="text/javascript" src="{{ static_url("web/js/PIE.js") }}"></script> 
+<![endif]-->
+{% block head %}
+{% end %}
+</head>
+<body>
+{% block header %}
+<div class="navbar">
+  <a href="/index" class="logo" style="background: url('{{ static_url("web/images/logo_w.png") }}') no-repeat center center ;background-size:100%;"></a>
+  <div class="nav-list">
+    <li>
+      <a href="/index">
+        <span class="en">HOME</span>
+        <span class="cn">首页</span>
+      </a>
+    </li>
+    <li>
+      <a href="/about" >
+        <span class="en">ABOUT</span>
+        <span class="cn">关于我们</span>
+      </a>
+    </li>
+    <li>
+      <a href="/newslist" >
+        <span class="en">NEWS</span>
+        <span class="cn">公司新闻</span>
+      </a>
+    </li>
+    <li>
+      <a href="/product" >
+        <span class="en">PRODUCTS</span>
+        <span class="cn">产品介绍</span>
+      </a>
+    </li>
+    <li>
+      <a href="/solve" >
+        <span class="en">SOLVE</span>
+        <span class="cn">解决方案</span>
+      </a>
+    </li>
+    <li>
+      <a href="/recruit" >
+        <span class="en">RECRUIT</span>
+        <span class="cn">招贤纳士</span>
+      </a>
+    </li>
+    <li>
+      <a href="/contact" >
+        <span class="en">CONTACT</span>
+        <span class="cn">联系我们</span>
+      </a>
+    </li>
+<!--     <li class='right login'>
+      <a href="/login">
+        <span class="en">LOGIN</span>
+        <span class="cn">登录</span>
+      </a>
+    </li>
+    <li class='right'>
+      <a href="/reg">
+        <span class="en">REGISTER</span>
+        <span class="cn">注册</span>
+      </a>
+    </li> -->
+  </div>
+
+</div>
+{% end %}
+
+
+{% block body %}{% end %}
+{% block bottom %}
+<!-- <div class="footer">
+  <div class="w1200">
+    
+    <a href="" class="logo" ><img src="{{ static_url("web/images/footlogo.png") }}" alt="" /></a>
+    <div class="rightpart">
+      <div class="footnav">
+        <li><a href="">联系我们</a></li>
+        <li><a href="">招纳贤士</a></li>
+        <li><a href="">解决方案</a></li>
+        <li><a href="">产品介绍</a></li>
+        <li><a href="">公司新闻</a></li>
+        <li><a href="">关于我们</a></li>
+      </div>
+      <div class="clear"></div>
+      <div class="copyright">
+        Copyright ©2013  树融科技有限责任公司  ‖  树融 Chnyoo.cn All Rights Reserved     京ICP备12005221号 
+      </div>
+    </div>    
+  </div>
+</div> -->
+
+
+
+<div class="footer" style="background:#fafafa;">
+  <div class="w1200">
+    
+    <!-- <a href="" class="logo"><img src="images/footlogo.png" alt="" /></a> -->
+    <div class="center">
+      <div class="footnav">
+        <li><a href="">联系我们</a></li>
+        <li><a href="">招纳贤士</a></li>
+        <li><a href="">解决方案</a></li>
+        <li><a href="">产品介绍</a></li>
+        <li><a href="">公司新闻</a></li>
+        <li><a href="">关于我们</a></li>
+      </div>
+      <div class="clear"></div>
+      <div class="copyright">
+        Copyright ©2013  树融科技有限责任公司  ‖  树融 Chnyoo.cn All Rights Reserved     京ICP备12005221号 
+      </div>
+    </div>    
+  </div>
+</div>
+
+{% end %}
+</body>
+</html>
+
+
+
+
+
+
+

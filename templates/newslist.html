@@ -1,0 +1,215 @@
+{% extends "template2.html" %}
+
+{% block head %}
+
+{% end %}
+
+{% block body %}
+<!-- <div class="banner_newslist banner_nei"></div> -->
+<div class="con-titbox">
+	<div class="w1200">
+		<div class="en">Make Data Simple</div>
+		<div class="cn">新闻报告</div>
+	</div>
+</div>
+
+<div class="main bg_g pt_40 pb_40 rec">
+	<div class="w1200" style="box-shadow:none;">
+		<div class="news-i">
+			<div class="imgbox01"><img src="{{ static_url("web/images/newsls01.png") }}" alt=""></div>
+			<div class="tit-info">
+				<div class="title">新闻/Highlight News</div>
+				<div class="p">2018年7月，树融科技应邀参加由美国麻省理工学院（MIT）和清华大学共同发起的“麻省理工-清华大学未来城市创新网络计划”活动，图为树融CEO王志永在杭州站发言。</div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+<div class="main bg_g pt_40 pb_40 rec">
+	<div class="w1200" style="box-shadow:none;">
+		<div class="news-i">
+			<div class="imgbox01"><img src="{{ static_url("web/images/newsls02.png") }}" alt=""></div>
+			<div class="tit-info">
+				<div class="title">报告/Featured Research</div>
+				<div class="p">树融科技应邀参加“麻省理工-清华大学未来城市创新网络计划”活动，图为树融CEO王志永在深圳站发言。</div>
+			</div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+<!-- 
+<div class="main bg_g pt_40 pb_40 rec">
+	<div class="w1200" style="box-shadow:none;">
+
+		<div id="scr01" class="slideBox">
+			<div class="hd">
+				<ul><li></li><li></li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<div class="imgbox01"><img src="{{ static_url("web/images/newsls01.png") }}" alt=""></div>
+						<div class="tit-info">
+							<div class="title">新闻/Highlight News</div>
+							<div class="p">2018年7月，树融科技应邀参加由美国麻省理工学院（MIT）和清华大学共同发起的“麻省理工-清华大学未来城市创新网络计划”活动，图为树融CEO王志永在杭州站发言。</div>
+						</div>
+					</li>
+					<li>
+						<div class="imgbox01"><img src="{{ static_url("web/images/newsls02.png") }}" alt=""></div>
+						<div class="tit-info">
+							<div class="title">报告/Featured Research</div>
+							<div class="p">树融科技应邀参加“麻省理工-清华大学未来城市创新网络计划”活动，图为树融CEO王志永在深圳站发言。</div>
+						</div>
+					</li>
+
+
+				</ul>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+		jQuery("#scr01").slide({mainCell:".bd ul",autoPlay:true});
+		</script>
+
+
+	</div>
+</div> -->
+<!-- <div class="main bg_g pt_40 pb_40 rec">
+	<div class="w1200" style="box-shadow:none;">
+		<div class="news-ltit">新闻</div>
+		<div class="newslist"></div>
+	</div>
+</div>
+<div class="main bg_g pt_40 pb_40 rec">
+	<div class="w1200" style="box-shadow:none;">
+		<div class="news-ltit">研究报告</div>
+			<div class="newslist"></div>
+	</div>
+</div> -->
+
+<!-- <div class="main bg_g pt_40 pb_40">
+	<div class="w1200" style="box-shadow:none;">
+ --><!-- 		<div class="newslist_page">
+			<div class="titbox">
+				<div class="dian"></div>
+				<span class="cn">新闻动态</span>
+				<span class="gang">/</span>
+				<span class="en">NEWS</span>
+				<a href="" class="more">更多+</a>
+			</div>
+		</div> -->
+		<!-- <div class="newslist"> -->
+			<!-- <li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li>
+			<li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li>
+			<li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li>
+			<li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li>
+			<li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li>
+			<li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li>
+			<li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li>
+			<li><a href="news.html" target="nei">
+				<span class="imgbox"><img src="{{ static_url("web/images/newimg1.jpg") }}" alt="" /></span>
+				<span class="describe">
+					<span class="tith2">新闻标题</span>
+					<span class="note">新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---新闻内容---</span>
+					<span class="time">11.Mar</span>
+				</span>
+			</a></li> -->
+		<!-- </div> -->
+<!-- 		<div class="clear"></div>
+		<div class="pagelist">
+			<a href="" class="prev">上一页</a>
+			<a href="" class="num">1</a>
+			<a href="" class="num">2</a>
+			<a href="" class="num">3</a>
+			<a href="" class="num">4</a>
+			<a href="" class="num">5</a>
+			<a href="" class="num">6</a>
+			<a href="" class="next">下一页</a>
+
+		</div>
+	</div> -->
+<!-- </div> -->
+<script>
+
+$(function(){
+	$.ajax({
+        url: '/md',
+        type: 'get',
+        dataType: 'json',
+        success:function(data){
+            // console.log(data.length);
+            for (var i = 0; i < data.length; i++) {
+				// $(".newslist li .describe .tith2").eq(i).text(data[i].title)
+				$('.newslist').append(
+					'<li><a href="/news/'+(i+1)+'" target="nei">'+
+						'<span class="imgbox">'+
+							'<img src="'+'/static/news_md/'+(i+1)+'/'+data[i].src+'" alt="" />'+
+						'</span>'+
+						'<span class="describe">'+
+							'<span class="tith2">'+data[i].title+'</span>'+
+							'<span class="note">'+data[i].describe+'</span>'+
+							'<span class="time">'+data[i].time+'</span> </span> '+
+							'</a></li>')
+
+
+            };
+            
+        }
+    })
+})
+
+
+</script>
+{% end %}

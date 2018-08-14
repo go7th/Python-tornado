@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/pagedown/1.0/Markdown.Converter.js"></script>
+</head>
+<body>
+<div id="test"></div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.ajax({
+        url: '/md',
+        type: 'get',
+        dataType: 'json',
+        success:function(data){
+            console.log(data.length);
+            for (var i = 0; i < data.length; i++) {
+                var converter = new Markdown.Converter();
+                var htm = converter.makeHtml(data[i].content);
+                $('#test').append(htm);
+            };
+            
+        }
+    })
+    $.ajax({
+        url: '/mdgetone/1',
+        type: 'get',
+        dataType: 'json',
+        success:function(data){
+            console.log(data);
+            console.log(data.content);
+
+        }
+    })
+
+
+});
+
+
+</script>
+
+</body>
+</html>

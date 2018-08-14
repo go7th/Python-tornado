@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+<title>标题</title>
+<meta name="keywords" content="关键词" />
+<meta name="description" content="描述" />
+<link href="{{ static_url("web/css/home.css") }}" rel="stylesheet" type="text/css" />
+<link href="{{ static_url("web/css/jquery.fullPage.css") }}" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{{ static_url("web/js/jquery2.2.1.min.js") }}"></script>
+<!-- <script src="http://cdn.staticfile.org/jqueryui/1.10.3/jquery-ui.min.js") }}"></script> -->
+<script type="text/javascript" src="{{ static_url("web/js/jquery.SuperSlide.2.1.1.js") }}"></script>
+<script type="text/javascript" src="{{ static_url("web/js/jquery.fullPage.min.js") }}"></script>
+<!--[if (gte IE 6)&(lte IE 10)]>
+	<script type="text/javascript" src="{{ static_url("web/js/jquery1.42.min.js") }}"></script>
+    <script type="text/javascript" src="{{ static_url("web/js/html5.js") }}"></script>
+  	<script type="text/javascript" src="{{ static_url("web/js/selectivizr.js") }}"></script>
+    <script type="text/javascript" src="{{ static_url("web/js/PIE.js") }}"></script> 
+<![endif]-->
+<style>
+	
+
+.section{text-align: center;font: 50px "Microsoft Yahei";color: #fff;/* padding-top: 56px;*/}
+.section *{color:#212121;}
+.section .slide img{width:100%;line-height: 100%;}
+.section .tith1{font-size:28px;line-height:40px;}
+.section .tith2{font-size:20px;line-height:30px;}
+.section .content{font-size:14px;line-height:24px;justify-content:center;width:30%;margin:10px auto;}
+.section .b-line{width:20%;margin:10px auto;height:1px;background: #212121;}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span{background: #00a1f1;}
+#fp-nav ul li a span,.fp-slidesNav ul li a span{border: 2px solid #00a1f1;}
+#fp-nav ul li a.active span{width:15px;height:15px;border-radius:100px;}
+#fp-nav ul li a span{width:12px;height:12px;border-radius:100px;background:rgba(255,255,255,.8);}
+#fp-nav ul li .fp-tooltip{color:#63cbff;font-family:"Microsoft Yahei";font-size:14px;}
+
+</style>
+</head>
+<body>
+			<div class="navbar">
+				<a href="/" class="logo" style="background:url('{{ static_url("web/images/home/logo.jpg") }}') no-repeat center center ;background-size:100%;"></a>
+				<div class="nav-list">
+					<li>
+						<a href="/">
+							<span class="en">HOME</span>
+							<span class="cn">首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="/about">
+							<span class="en">ABOUT</span>
+							<span class="cn">关于我们</span>
+						</a>
+					</li>
+					<li>
+						<a href="/newslist">
+							<span class="en">NEWS</span>
+							<span class="cn">公司新闻</span>
+						</a>
+					</li>
+					<li>
+						<a href="/product">
+							<span class="en">PRODUCTS</span>
+							<span class="cn">产品介绍</span>
+						</a>
+					</li>
+<!-- 					<li>
+						<a href="muban.html">
+							<span class="en">DATAS</span>
+							<span class="cn">数据服务</span>
+						</a>
+					</li> -->
+					<li>
+						<a href="/solve">
+							<span class="en">SOLVE</span>
+							<span class="cn">解决方案</span>
+						</a>
+					</li>
+					<li>
+						<a href="/recruit">
+							<span class="en">RECRUIT</span>
+							<span class="cn">招贤纳士</span>
+						</a>
+					</li>
+					<li>
+						<a href="/contact">
+							<span class="en">CONTACT</span>
+							<span class="cn">联系我们</span>
+						</a>
+					</li>
+					<li class='right login'>
+						<a href="/login">
+							<span class="en">LOGIN</span>
+							<span class="cn">登录</span>
+						</a>
+					</li>
+					<li class='right'>
+						<a href="/reg">
+							<span class="en">REGISTER</span>
+							<span class="cn">注册</span>
+						</a>
+					</li>
+				</div>
+
+			</div>
+
+			<div id="dowebok">
+				<div class="section">
+					<div class="slide"><h3><img src="{{ static_url("web/images/home/banner1.jpg") }}" alt=""></h3></div>
+					<div class="slide"><h3><img src="{{ static_url("web/images/home/banner1.jpg") }}" alt=""></h3></div>
+					<div class="slide"><h3><img src="{{ static_url("web/images/home/banner1.jpg") }}" alt=""></h3></div>
+				</div>
+				<div class="section">
+					<div class="titbox">
+						<div class="tith1">我们的产品</div>
+						<div class="tith2">PRODUCTS</div>
+					</div>
+						<div class="content">我们为您提供一站式的数据处理平台，让您的数据探索之旅变得前所未有的简单！</div>
+						<div class="b-line"></div>		
+<!-- 					 	<div class="product">
+						    <li class="first"></li> 
+						    <li class="second"></li> 
+						    <li class="third"></li> 
+						    <li class="fourth"></li>
+					  	</div> -->
+
+						<div class="advantage pro">
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/pro01.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">商业智慧引擎</div>
+						            <div class="textnote">商业智慧引擎是通过多源数据融合将多种数据源、多种结构、多种内容、多种粒度的数据整合成一个可基于某种规则相互关联的、可分析的数据集。针对当前企业应用需求痛点，对不同来源异构数据进行深层次整体和价值挖掘。</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/pro02.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">数据融合平台</div>
+						            <div class="textnote">结合深度学习、机器学习的数据融合技术，搭建从数据获取、集成、管理、挖掘、价值提升到面向最终应用场景的数据融合平台。开发产品主要面向包括城市规划、商业、能源等在内的多个领域。</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/pro03.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">SaaS</div>
+						            <div class="textnote">经过对多源异构城市数据、商业数据和企业内部数据的深层次整合和价值挖掘，以及算法模型预测与仿真，通过可交互的动态数据可视化方式，将结果展现给用户。</div>
+						        </div>
+						    </li>
+						</div>
+
+
+
+				</div>
+
+				
+<!-- 				<div class="section">
+					<div class="titbox">
+						<div class="tith1">我们的优势</div>
+						<div class="tith2">PROGRAMME</div>
+					</div>
+						<div class="content">我们在数据分析和应用上积累了丰富的经验,</br>为您的决策和选择保驾护航！
+</div>
+						<div class="b-line"></div>		
+						<div class="advantage">
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage1.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">方便易用</div>
+						            <div class="textnote">区别于传统的数据处理工具繁琐的操作流程，Data Fusion凭借高效易懂的UI涉及让您轻松上手。数据可视化效果的即时呈现，更让您所见即所得！</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage2.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">一站解决</div>
+						            <div class="textnote">一个网站、一个云端、一个平台，满足您所有数据处理的需求。Data Fusion协助您获取数据、融合数据、表现数据、管理数据，为您打造大数据的一站式解决方案！</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage3.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">团队协作</div>
+						            <div class="textnote">Data Fusion致力于构建结构清晰的数据处理权限、设计调配方便的任务管理界面，为您公司和项目的数据管理提供更加高效的团队协作框架。</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage4.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">稳定可靠</div>
+						            <div class="textnote">Data Fusion通过稳健的后端构造和持续的系统优化，保证您的上手体验，同时也为您的数据安全保驾护航!</div>
+						        </div>
+						    </li>
+						</div>
+				</div>
+ -->
+
+
+				<div class="section">
+					<div class="titbox">
+						<div class="tith1">解决方案
+</div>
+						<div class="tith2">SOLUTION</div>
+					</div>
+						<div class="content">我们在数据分析和应用上积累了丰富的经验,</br>为您的决策和选择保驾护航！
+</div>
+						<div class="b-line"></div>		
+						<div class="advantage">
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage1.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">方便易用</div>
+						            <div class="textnote">区别于传统的数据处理工具繁琐的操作流程，Data Fusion凭借高效易懂的UI涉及让您轻松上手。数据可视化效果的即时呈现，更让您所见即所得！</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage2.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">一站解决</div>
+						            <div class="textnote">一个网站、一个云端、一个平台，满足您所有数据处理的需求。Data Fusion协助您获取数据、融合数据、表现数据、管理数据，为您打造大数据的一站式解决方案！</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage3.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">团队协作</div>
+						            <div class="textnote">Data Fusion致力于构建结构清晰的数据处理权限、设计调配方便的任务管理界面，为您公司和项目的数据管理提供更加高效的团队协作框架。</div>
+						        </div>
+						    </li>
+						    <li>
+						        <div class="imgbox"><img src="{{ static_url("web/images/home/advantage4.png") }}" alt=""></div>
+						        <div class="con">
+						            <div class="tith3">稳定可靠</div>
+						            <div class="textnote">Data Fusion通过稳健的后端构造和持续的系统优化，保证您的上手体验，同时也为您的数据安全保驾护航!</div>
+						        </div>
+						    </li>
+						</div>
+				</div>
+
+				<div class="section">
+					<div class="titbox">
+						<div class="tith1">我们的案例</div>
+						<div class="tith2">CASE</div>
+					</div>
+						<div class="content">我们在数据分析和应用上积累了丰富的经验,</br>为您的决策和选择保驾护航！</div>
+						<div class="b-line"></div>		
+						<div class="case">
+							案例
+						</div>
+				</div>
+				<div class="section">
+					<div class="titbox">
+						<div class="tith1">我们的客户</div>
+						<div class="tith2">CUSTOMER</div>
+					</div>
+						<div class="content">我们在数据分析和应用上积累了丰富的经验,</br>为您的决策和选择保驾护航！</div>
+						<div class="b-line"></div>		
+					    <div class="customer">
+					        
+					    </div>
+				</div>
+
+
+				<div class="section lx-us" >
+					<div class="titbox">
+						<div class="tith1">联系我们</div>
+						<div class="tith2">CONTACT</div>
+					</div>
+						<div class="content">我们在数据分析和应用上积累了丰富的经验,</br>为您的决策和选择保驾护航！</div>
+						<div class="b-line" style='background:#333;'></div>		
+						<div class="contact">
+						  <div class="con">
+						      <div class="wechat">
+						          <div class="tith3">关注微信：树融科技</div>
+						          <div class="imgbox"><img src="{{ static_url("web/images/home/wechat.jpg") }}" alt=""></div>
+						      </div>
+						      <div class="copyright">树融科技 版权所有 2015-2018 杨浦区  粤ICP备xxxxxxxxx号</div>
+						  </div>
+						</div>
+				</div>
+
+
+
+<!-- 						<product v-if="section.component == 1"></product>	
+						<advantage v-else-if="section.component == 2"></advantage>	
+						<advantage v-else-if="section.component == 3"></advantage>	
+						<case v-else-if="section.component == 4"></case>	
+						<customer v-else-if="section.component == 5"></customer>	
+						<contact v-else-if="section.component == 6"></contact>	 -->
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	
+$(function(){
+	$('#dowebok').fullpage({
+		'sectionsColor': ['#fff', '#f2f2f2', '#fff', '#f2f2f2','#fff', '#f2f2f2','#fff'],
+		'navigation': true,
+		'navigationPosition': 'right',
+		'navigationTooltips': ['首页', '我们的产品', '我们的优势', '解决方案', '我们的客户', '联系我们'],
+	});
+});
+</script>
+</body>
+</html>

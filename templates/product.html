@@ -1,0 +1,210 @@
+{% extends "template.html" %}
+
+{% block head %}
+<script type="text/javascript" src="{{ static_url("web/js/echarts.min.js") }}"></script>
+{% end %}
+
+{% block body %}
+
+<!-- <div class="banner_product banner_nei"></div>
+
+
+<div class="main bg_g pt_40 pb_40">
+	<div class="w1200 bg_w">
+		<div class="news-page">
+			<div class="tith1">网络活动，社交性植入策略 ——社会化语境下，让消费者说出喜好  </div>
+			<div class="describe">
+				<dl class="tag">
+					<dt>标签：</dt>
+					<dd><a href="">标签1</a></dd>
+					<dd><a href="">标签1</a></dd>
+					<dd><a href="">标签1</a></dd>
+					<dd><a href="">标签1</a></dd>
+				</dl>
+				<div class="time">2013-08-19</div>
+			</div>
+			<div class="content">
+				<div class="info">北纬三十七度红酒网是由中国国际葡萄酒网、中国国际商会山东商会葡萄酒分会及烟台市葡萄与葡萄酒局三家单位唯一官方授权的电子商务平台，也是张裕、长城葡萄酒有限公司官
+方授权的网络销售公司。</div>
+				<div class="imgbox"><img src="{{ static_url("web/images/newsimg.jpg") }}" alt="" /></div>
+				<p class="title">项目背景：</p>
+				<p>消费者为什么要看这些东西呢？它们提供了消费者什么利益？
+社会化语境下，让消费者说出喜好。
+社会化媒体的兴起，包括QQ等聊天工具，娱乐性SNS，人人、校园等人群细分总集，微博，微信，陌陌等，无论是网络平台还是移动网络平台，一系列的媒体提
+供了让消费者自说其话的平台，人们在上面发表各种意见，可能针对这个意见，会有更多的声音出来，有赞成、有反对，也许他们站在了不同的角度，代表不同
+属性、不同阶段的用户群体。如果是在一个群组中，活跃用户的意见，可能会影响到后来提出意见者的思想，并导致他们盲从。这些庞大的社会语言，带给品牌
+营销者大量的、前所未有的、关于消费者的详细数据。作为数字营销人员，我们会从一个网络消费者的行为路径描述出具化的消费形象，并针对这个消费形象制
+定更为合适的营销战略。
+社交性媒体无疑是与这个具化的、消费形象说话的最好路径。
+如以下的案例，具化的消费形象能让我们知道，他是个移动的年轻用户，对新的优惠活动有积极兴趣。
+贵州电信的合作，利用的就是移动社交平台，针对贵州地区的APP社交游戏，生活应用进行植入投放。在层层筛选，精准定向到目标受众，推送到受众面前的，
+不再是硬绑绑的广告，而是实实在在的优惠资讯。此次投放中，获得了的高点击率，无疑为我们社会化媒体投放策略打上一支强心针，从实践中检验策略的可行
+性。深入了解消费者需求，激发消费者参与度，要达到这一点目的，要求的已经远远超越传统的网络投放的思维和方法。通过对于用户接触到的各个接触点的分
+析监测，然后进行全局性，系统性的分析，优化数字营销策略，让消费者说出品牌喜好。</p>
+			</div>
+			<div class="line"></div>
+			<div class="page-controll">
+				<div class="prev"><span>上一篇：</span><a href="">关于传悦网站减少根本的话想刘克军  </a></div>
+				<div class="next"><span>下一篇：</span><a href="">关于传悦网站减少根本的话想刘克军</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+
+<div class="con-titbox">
+	<div class="w1200">
+		<div class="en">Make Data Simple</div>
+		<div class="cn">产品介绍</div>
+	</div>
+</div>
+
+<div class="sectiona" style="/*background:url({{ static_url("web/images/pro00.png") }}) no-repeat 70% center;*/">
+	<div class="w1200">
+		<div class="docbox">
+			<div class="info"><b>Data Capture</b>/Real Timel Open Soutcel | Large Volume</div>
+			<div class="title">使用多种方法获取源头数<br>据，包括并不限于政府、<br>公开、合作、自有数据</div>
+			<div class="content">
+				数据的多样性保证了更多的分析维度，更<br>高的精确度，以及更高的扩展性。
+			</div>
+		</div>
+		<a href="" class="imgbox"><img src="{{ static_url("web/images/pro00.png") }}" alt="" /></a>
+		
+<!-- 		<div id="hzhb">
+			
+
+		<div class="picMarquee-top"> -->
+<!-- 			<div class="hd">
+				<a class="next"></a>
+				<a class="prev"></a>
+			</div>
+ -->			<!-- <div class="bd">
+				<ul class="picList">
+					<li>
+						<div class="pic"><a href="#" target="_blank"><img src="{{ static_url("web/images/hzhb01.jpg") }}" /></a></div>
+						<div class="title"><a href="#" target="_blank">效果图1</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="#" target="_blank"><img src="{{ static_url("web/images/hzhb01.jpg") }}" /></a></div>
+						<div class="title"><a href="#" target="_blank">效果图2</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="#" target="_blank"><img src="{{ static_url("web/images/hzhb01.jpg") }}" /></a></div>
+						<div class="title"><a href="#" target="_blank">效果图3</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="#" target="_blank"><img src="{{ static_url("web/images/hzhb01.jpg") }}" /></a></div>
+						<div class="title"><a href="#" target="_blank">效果图4</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="#" target="_blank"><img src="{{ static_url("web/images/hzhb01.jpg") }}" /></a></div>
+						<div class="title"><a href="#" target="_blank">效果图5</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="#" target="_blank"><img src="{{ static_url("web/images/hzhb01.jpg") }}" /></a></div>
+						<div class="title"><a href="#" target="_blank">效果图6</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		</div> -->
+
+
+
+		<script type="text/javascript">
+		// $("#hzhb .picMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
+		</script>
+
+
+
+
+
+
+
+		<!-- <a href="" class="imgbox"><img src="./images/sec2-img1.png" alt="" /></a> -->
+	</div>
+</div>
+<div class="sectiona">
+	<div class="w1200">
+		<div class="docbox">
+			<div class="info"><b>Data API</b>/Privacy | Integration | Automation</div>
+			<div class="title">所有数据流通、分析、<br>呈现完全通过API，<br>保证隐私性与安全性</div>
+			<div class="content">
+				API是数据科学的完美接口，我们提供<br>
+				的API平台用于打通数据环节、设定权<br>限、以及技术支持。
+			</div>
+		</div>
+		<!-- <a href="" class="imgbox"><img src="{{ static_url("web/images/sec2-img1.png") }}" alt="" /></a> -->
+		<div class="search-box clearfix">
+			<input type="text" class="textin" placeholder="请选择">
+			<a href="#" class="submit"></a>
+			<div class="charts">
+				<li data-id="01">店铺1</li>
+				<li data-id="02">店铺2</li>
+				<li data-id="03">店铺3</li>
+				<li data-id="04">图表04</li>
+				<li data-id="05">店铺实时客流量</li>
+				<li data-id="06">店铺月份与流量的关系</li>
+			</div>
+		</div>
+		<div class="imgbox" id="chart1" style="height:300px;background:#fff;margin-top:20px;"></div>
+	</div>
+</div>
+<div class="sectiona">
+	<div class="w1200">
+		<div class="docbox">
+			<div class="info"><b>Data Analysis</b> / Anonymity | Precision | Cutting-dege</div>
+			<div class="title">数据分析完全匿名、使用<br>统计、机器学习等多种方<br>式完成建模预测。</div>
+			<div class="content">
+				深耕十年积累的城市数据模型，使我们最<br>为核心能力。通过分析建模，海量数据终<br>将以最简洁有力的方式，加速你的公司发<br>展。
+			</div>
+		</div>
+		<a href="" class="imgbox"><img src="{{ static_url("web/images/sec2-img2.jpg") }}" alt="" /></a>
+		
+	</div>
+</div>
+<div class="sectiona">
+	<div class="w1200">
+		<div class="docbox">
+			<div class="info">Data Visualization</div>
+			<div class="title">针对项目场景开发定制<br>化可视化组件，完成最<br>后一公里数据服务。</div>
+			<div class="content">
+				所有结果在线呈现，结果实时可见，清<br>晰易懂。我们将采用最佳的可视化方案，<br>结合数据特征与您的喜好，完成可视化<br>方案。
+			</div>
+		</div>
+		<!-- <a href="" class="imgbox"><img src="{{ static_url("web/images/sec2-img3.png") }}" alt="" /></a> -->
+		<div class="imgbox" id="chart-ids">
+			<li id="chart-id01"></li>
+			<li id="chart-id02"></li>
+			<li id="chart-id03"></li>
+			<li id="chart-id04"></li>
+			<li id="chart-id05"></li>
+			<li id="chart-id06"></li>
+		</div>
+	</div>
+</div>
+
+<style>
+	#chart-ids{
+		overflow: hidden;
+		margin-top: 50px;
+	}
+	 #chart-ids.imgbox li{
+	 	height: 180px;
+	 	width: 180px;
+	 	float: left;
+	 	margin: 10px;
+	 }
+	 #chart-ids.imgbox li canvas{
+	 	background: #fff;
+
+	 }
+</style>
+<script type="text/javascript" src="{{ static_url("web/js/echarts-setting.js") }}"></script>
+
+
+
+
+{% end %}

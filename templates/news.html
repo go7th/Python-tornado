@@ -1,0 +1,92 @@
+{% extends "template.html" %}
+
+{% block head %}
+<script src="http://cdn.bootcss.com/pagedown/1.0/Markdown.Converter.js"></script>
+{% end %}
+
+{% block body %}
+<div class="main bg_g pt_100 pb_40">
+	<div class="w1200 bg_w">
+		<div class="news-page" data-id="{{id }}">
+			<div class="tith1"></div>
+			<div class="describe">
+				<dl class="tag">
+					<dt>标签：</dt>
+					<dd><a href="">标签1</a></dd>
+					<dd><a href="">标签1</a></dd>
+					<dd><a href="">标签1</a></dd>
+					<dd><a href="">标签1</a></dd>
+				</dl>
+				<div class="time"></div>
+			</div>
+			<div class="content">
+				<!-- <div class="imgbox"><img src="{{ static_url("web/images/newsimg.jpg") }}" alt="" /></div>
+				<p>消费者为什么要看这些东西呢？它们提供了消费者什么利益？
+社会化语境下，让消费者说出喜好。
+社会化媒体的兴起，包括QQ等聊天工具，娱乐性SNS，人人、校园等人群细分总集，微博，微信，陌陌等，无论是网络平台还是移动网络平台，一系列的媒体提
+供了让消费者自说其话的平台，人们在上面发表各种意见，可能针对这个意见，会有更多的声音出来，有赞成、有反对，也许他们站在了不同的角度，代表不同
+属性、不同阶段的用户群体。如果是在一个群组中，活跃用户的意见，可能会影响到后来提出意见者的思想，并导致他们盲从。这些庞大的社会语言，带给品牌
+营销者大量的、前所未有的、关于消费者的详细数据。作为数字营销人员，我们会从一个网络消费者的行为路径描述出具化的消费形象，并针对这个消费形象制
+定更为合适的营销战略。
+社交性媒体无疑是与这个具化的、消费形象说话的最好路径。
+如以下的案例，具化的消费形象能让我们知道，他是个移动的年轻用户，对新的优惠活动有积极兴趣。
+贵州电信的合作，利用的就是移动社交平台，针对贵州地区的APP社交游戏，生活应用进行植入投放。在层层筛选，精准定向到目标受众，推送到受众面前的，
+不再是硬绑绑的广告，而是实实在在的优惠资讯。此次投放中，获得了的高点击率，无疑为我们社会化媒体投放策略打上一支强心针，从实践中检验策略的可行
+性。深入了解消费者需求，激发消费者参与度，要达到这一点目的，要求的已经远远超越传统的网络投放的思维和方法。通过对于用户接触到的各个接触点的分
+析监测，然后进行全局性，系统性的分析，优化数字营销策略，让消费者说出品牌喜好。</p> -->
+			</div>
+			<div class="line"></div>
+			<div class="page-controll">
+				<div class="prev"><span>上一篇：</span><a href="#">关于传悦网站减少根本的话想刘克军  </a></div>
+				<div class="next"><span>下一篇：</span><a href="#">关于传悦网站减少根本的话想刘克军</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	var id = $('.news-page').attr('data-id')
+	var prev = id-1
+	var next = id*1+1
+	// console.log(id,next)
+	$.ajax({
+        url: '/mdgetone/'+id,
+        type: 'get',
+        dataType: 'json',
+        success:function(data){
+			var converter = new Markdown.Converter();
+			var htm = converter.makeHtml(data.content);
+			$('.news-page .tith1').html(data.title);
+			$('.news-page .describe .time').html(data.time);
+			$('.news-page .content').html(htm);
+        }
+    })
+	$.ajax({
+        url: '/mdgetone/'+prev,
+        type: 'get',
+        dataType: 'json',
+        success:function(data){
+			if(data.status=='no'){
+				$(".page-controll .prev a").text("已经是第一篇")
+			}else{
+				$(".page-controll .prev a").text(data.title)				
+				$(".page-controll .prev a").attr("href","/news/"+prev)				
+			}
+        }
+    })
+	$.ajax({
+        url: '/mdgetone/'+next,
+        type: 'get',
+        dataType: 'json',
+        success:function(data){
+			if(data.status=='no'){
+				$(".page-controll .next a").text("已经是最后一篇")
+			}else{
+				$(".page-controll .next a").text(data.title)				
+				$(".page-controll .next a").attr("href","/news/"+next)				
+			}
+        }
+    })
+})
+</script>
+{% end %}
